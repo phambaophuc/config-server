@@ -1,0 +1,18 @@
+server:
+  port: 9093
+  servlet:
+    context-path: /review-service
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/fast_food_express_db
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+
+springdoc:
+  cache:
+    disabled: true
